@@ -1,1 +1,119 @@
 
+.container {
+    display: flex;
+    width: 100vw;
+    height: 95vh;
+    justify-content: center;
+}
+
+.btn-modal {
+    padding: 10px 15px;
+    border: 0;
+    background-color: rgb(141, 233, 233);
+    box-shadow: 2px 2px 3px 1px rgb(94, 94, 191);
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    margin: auto;
+
+
+}
+
+.btn-modal:hover {
+    background-color: rgb(119, 241, 204);
+
+}
+
+/* модальное окно */
+.modal-wrapper {
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+    position: relative;
+    padding: 30px;
+    width: 300px;
+    margin: 250px auto;
+    background-color: aliceblue;
+    border: 3px solid rgba(163, 240, 228, 0.392);
+    border-radius: 5px;
+    animation: modal_animation 2s;
+
+}
+
+#modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px
+}
+
+.modal__close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal__close:hover {
+    color: blue;
+
+}
+
+.modal-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal__input {
+    padding: 3px 5px;
+    outline: 0;
+
+}
+
+.modal-input::placeholder {
+    color: rgb(116, 153, 153);
+    font-size: 14px;
+}
+
+.modal__btn {
+    padding: 10px 5px;
+    border: 0;
+    background-color: rgb(141, 233, 233);
+    box-shadow: 1px 1px 2px 1px rgb(94, 94, 191);
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    margin: auto;
+}
+
+.modal__btn:hover {
+    background-color: rgb(119, 241, 204);
+
+}
+
+.active {
+    display: block;
+}
+
+@keyframes modal_animation {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
