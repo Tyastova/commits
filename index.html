@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>fgdhj</h1>
-    <button>complete</button>
-    <h2>commit</h2>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn-modal">ЗАГРУЗИТЬ МОДАЛЬНОЕ ОКНО</button>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <div class="modal__close">&times;</div>
+        <form id="modal-form" action="#">
+          <h3 class="modal-title">Мы свяжемся с вами!</h3>
+          <input
+            type="text"
+            class="modal-input"
+            id="name"
+            placeholder="Имя"
+            name="user-name"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="phone"
+            class="modal-input"
+            id="telephone"
+            placeholder="+7(999)999-99-99"
+            name="user-tel"
+          />
+          <button class="modal__btn">Перезвоним вам</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
